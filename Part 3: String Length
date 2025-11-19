@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>  // Needed for strlen()
+
+int main() {
+    char str[100];  // Array to store the string
+
+    // 1. Ask the user to enter a string
+    printf("Enter the name of your dog: ");
+    scanf("%s", str);
+    // Note: %s stops reading at the first space.
+    // For full-line input, we could use fgets(), if needed.
+
+    // 2. Print the string back
+    printf("You entered: %s\n", str);
+
+    // 3. Find the length of the string
+    int length = strlen(str);
+
+    // Display the length
+    printf("Length of the string: %d\n", length);
+
+    return 0;
+}
