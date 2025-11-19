@@ -1,0 +1,24 @@
+#include <stdio.h>
+#define PI 3.14159  // Define the value of π
+
+int main() {
+    float radius, surface_area;
+
+    // Ask the user to enter the radius
+    printf("Enter the radius of the sphere: ");
+    scanf("%f", &radius);
+
+    // Check if the radius is valid
+    if (radius < 0) {
+        printf("Radius cannot be negative.\n");
+        return 1; // Exit the program with an error code
+    }
+
+    // Calculate the surface area using the formula: 4 * π * r^2
+    surface_area = 4 * PI * radius * radius;
+
+    // Display the result
+    printf("The surface area of the sphere is: %.2f square units\n", surface_area);
+
+    return 0;
+}
